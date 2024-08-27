@@ -24,9 +24,5 @@ li {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  padding: 84px, 140px;
-}
-
-.gallery-item {
-  width: calc((100% - 48px) / 3);
+  justify-content: center;
 }
