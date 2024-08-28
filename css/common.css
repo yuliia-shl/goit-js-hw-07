@@ -23,6 +23,11 @@ li {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 48px 24px;
   justify-content: center;
+}
+
+img {
+  display: block;
+  object-fit: cover;
 }
