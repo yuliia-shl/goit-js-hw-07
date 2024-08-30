@@ -13,6 +13,7 @@ function createBoxes(amount) {
   boxesEl.innerHTML = "";
   let size = 30;
   const boxes = [];
+
   for(let i = 0; i < amount; i++) {
     const box = document.createElement("div");
     box.style.width = `${size}px`;
@@ -21,6 +22,7 @@ function createBoxes(amount) {
     boxes.push(box);
     size += 10;
   };
+  
   boxesEl.append(...boxes);
 }
 
