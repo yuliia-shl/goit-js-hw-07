@@ -12,14 +12,16 @@ const boxesEl = document.querySelector("#boxes");
 function createBoxes(amount) {
   boxesEl.innerHTML = "";
   let size = 30;
+  const boxes = [];
   for(let i = 0; i < amount; i++) {
     const box = document.createElement("div");
     box.style.width = `${size}px`;
     box.style.height = `${size}px`;
     box.style.backgroundColor = getRandomHexColor();
-    boxesEl.appendChild(box);
+    boxes.push(box);
     size += 10;
   };
+  boxesEl.append(...boxes);
 }
 
 buttonCreateEl.addEventListener("click", () => {
